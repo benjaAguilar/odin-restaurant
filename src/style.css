@@ -113,8 +113,10 @@ h1{
     font-family: argScript;
     font-weight: 500;
     font-size: 2rem;
+    text-decoration: underline;
 }
 
 .h-menu:hover{
     color: yellow;
+    cursor: pointer;
 }
