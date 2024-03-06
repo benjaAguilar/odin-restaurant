@@ -7,6 +7,7 @@ let lastBtn;
 export default contentDiv;
 import createHome from "./home.js";
 import createMenu from "./menu.js";
+import createAbout from "./about.js";
 
 navigate(homeBtn);
 createHome();
@@ -43,5 +44,5 @@ menuBtn.addEventListener("click", () => {
 aboutBtn.addEventListener("click", () => {
     navigate(aboutBtn);
     lastBtn = aboutBtn;
-    
+    createAbout();
 });
