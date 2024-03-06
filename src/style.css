@@ -1,17 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+@font-face {
+    font-family: argScript;
+    src: url(./fonts/Argentina\ Script.ttf);
+}
+
+@font-face {
+    font-family: arg;
+    src: url(./fonts/Argentina\ free\ promo.ttf);
+}
+
+@font-face {
+    font-family: monserrat;
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 body{
+    height: 100vh;
     display: grid;
     grid-template-rows: 1fr 5fr;
-    background-color: dimgrey;
+    background-image: url(./img/parilla.jpg);
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-color: darkslategray;
+    backdrop-filter: blur(1.5px);
 }
 
 header{
+    font-family: monserrat;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: aliceblue;
+    background-color: black;
     padding: 1rem;
 }
 
 #content{
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+}
+
+.sub{
+    font-family: argScript;
+    position: absolute;
+    top: 300px;
+    left: 392px;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+h1{
+    font-family: arg;
+    font-weight: 100;
+    font-size: 8rem;
+}
+
+.h-menu{
+    position: absolute;
+    top: 520px;
+    left: 900px;
+    font-family: argScript;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.h-menu:hover{
+    color: yellow;
 }
