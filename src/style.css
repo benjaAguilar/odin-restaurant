@@ -80,6 +80,12 @@ nav button:hover{
     color: yellow;
     cursor: pointer;
     border-bottom: 2px solid yellow;
+    transition: 100ms all;
+}
+
+.selected{
+    color: yellow;
+    border-bottom: 2px solid yellow;
 }
 
 #content{

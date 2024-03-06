@@ -1,6 +1,46 @@
-let contentDiv = document.querySelector('#content');
+const contentDiv = document.querySelector('#content');
+const homeBtn = document.querySelector('#home-btn');
+const menuBtn = document.querySelector('#menu-btn');
+const aboutBtn = document.querySelector('#about-btn');
+let lastBtn;
 
 export default contentDiv;
 import createHome from "./home.js";
 
+navigate(homeBtn);
 createHome();
+lastBtn = homeBtn;
+
+function navigate(clickedBtn){
+    if(lastBtn != undefined){
+        lastBtn.disabled = false;
+        lastBtn.classList.remove('selected');
+
+    }
+    
+    clickedBtn.disabled = true;
+    clickedBtn.classList.add('selected');
+
+    while(contentDiv.firstChild){
+        contentDiv.removeChild(contentDiv.firstChild);
+
+    }
+}
+
+homeBtn.addEventListener("click", () => {
+    navigate(homeBtn);
+    lastBtn = homeBtn;
+    createHome();
+});
+
+menuBtn.addEventListener("click", () => {
+    navigate(menuBtn);
+    lastBtn = menuBtn;
+    
+});
+
+aboutBtn.addEventListener("click", () => {
+    navigate(aboutBtn);
+    lastBtn = aboutBtn;
+    
+});
