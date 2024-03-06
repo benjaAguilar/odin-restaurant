@@ -126,3 +126,42 @@ h1{
     color: yellow;
     cursor: pointer;
 }
+
+/* MENU */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    align-self: center;
+    justify-self: center;
+    height: 70vh;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px darkslategray;
+    padding: 2rem;
+    font-family: monserrat;
+
+}
+
+.img-dish{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+h2{
+    font-family: arg;
+    color: black;
+    align-self: center;
+}
+
+.card p{
+    color: black;
+}
