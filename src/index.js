@@ -6,6 +6,7 @@ let lastBtn;
 
 export default contentDiv;
 import createHome from "./home.js";
+import createMenu from "./menu.js";
 
 navigate(homeBtn);
 createHome();
@@ -17,7 +18,7 @@ function navigate(clickedBtn){
         lastBtn.classList.remove('selected');
 
     }
-    
+
     clickedBtn.disabled = true;
     clickedBtn.classList.add('selected');
 
@@ -36,7 +37,7 @@ homeBtn.addEventListener("click", () => {
 menuBtn.addEventListener("click", () => {
     navigate(menuBtn);
     lastBtn = menuBtn;
-    
+    createMenu();
 });
 
 aboutBtn.addEventListener("click", () => {
