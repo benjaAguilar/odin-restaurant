@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     mode: 'development',    
@@ -29,6 +30,14 @@ module.exports = {
             title: 'Restaurant',
             template: './src/index.html'
         }),
+        new CopyPlugin({
+            patterns: [
+                {from: './src/img/choripan.jpg', to: './img'},
+                {from: './src/img/skewer.jpg', to: './img'},
+                {from: './src/img/asado.jpg', to: './img'},
+                {from: './src/img/logo.svg', to: './img'},
+            ]
+        })
     ],
     output: {
         filename: 'main.js',

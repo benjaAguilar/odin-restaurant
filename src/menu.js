@@ -3,7 +3,7 @@ import contentDiv from "./index.js";
 let dishes = [
     {
         title: "Asado",
-        imgUrl: "img/asado.jpg",
+        imgUrl: "./img/asado.jpg",
         description: 
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Praesent id condimentum turpis. Pellentesque ultrices, 
@@ -15,7 +15,7 @@ let dishes = [
     },
     {
         title: "Skewer",
-        imgUrl: "img/skewer.jpg",
+        imgUrl: "./img/skewer.jpg",
         description: 
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Praesent id condimentum turpis. Pellentesque ultrices, 
@@ -27,7 +27,7 @@ let dishes = [
     },
     {
         title: "Choripan",
-        imgUrl: "img/choripan.jpg",
+        imgUrl: "./img/choripan.jpg",
         description: 
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Praesent id condimentum turpis. Pellentesque ultrices, 

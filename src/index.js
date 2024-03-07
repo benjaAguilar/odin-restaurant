@@ -1,3 +1,5 @@
+import css from './style.css';
+
 const contentDiv = document.querySelector('#content');
 const homeBtn = document.querySelector('#home-btn');
 const menuBtn = document.querySelector('#menu-btn');
